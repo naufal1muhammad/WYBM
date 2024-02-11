@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="icon" href="./images/heart.png" type="image/x-icon">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hidup Ni Kadang Di Atas, Kadang Di Bawah</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #ffebcd; /* AntiqueWhite - Feel free to change the color */
+            font-family: 'Arial', sans-serif;
+        }
+
+        .card {
+            position: relative;
+            width: 300px;
+            height: 400px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            animation: floatHeart 2s infinite;
+        }
+
+        .heart {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 36px;
+            color: #e74c3c; /* Alizarin - Feel free to change the color */
+            animation: beatHeart 1s infinite alternate;
+        }
+
+        .message {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            color: #333; /* Dark Gray - Feel free to change the color */
+            font-family: 'Comic Sans MS', cursive; /* Cute font */
+            font-size: 10px; /* Specify the font size */
+            padding: 0 10px; /* Adjusted padding for the message */
+            margin: 1%; /* Margin for the message */
+        }
+
+        @keyframes floatHeart {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        @keyframes beatHeart {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="heart">&hearts;</div>
+        <p class="message">My Dear Ati,
+
+            <br><br>You are beautiful. Your presence softens my heart and brings a smile that no one else can evoke.
+        
+            <br><br>I have fallen for you. This means I will take care of you, provide for you, and keep you happy for as long as there is breath in my heart.
+        
+            <br><br>Will you be mine?
+        
+            <br><br>With all my love,
+            <br>Naufall</p>
+    </div>
+</body>
+</html>
